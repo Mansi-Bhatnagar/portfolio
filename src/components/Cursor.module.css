@@ -1,0 +1,29 @@
+.circle {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #fff;
+  position: relative;
+  transition-duration: 0.4s;
+  transition-timing-function: ease-out;
+}
+.dot {
+  width: 6px;
+  height: 6px;
+  background-color: #fff;
+  position: absolute;
+  top: 7px;
+  margin-left: 7px;
+}
+.cursorInner {
+  border-radius: 50%;
+}
+.cursor {
+  position: absolute;
+  top: 0px;
+  z-index: 11;
+}
+@media (max-width: 768px) {
+  .cursor {
+    display: none;
+  }
+}

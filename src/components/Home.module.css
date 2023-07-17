@@ -1,0 +1,129 @@
+#home {
+  position: relative;
+}
+.tsparticles {
+  height: 100vh;
+  position: absolute;
+  top: 64px;
+  left: 0;
+  width: -webkit-fill-available;
+}
+.body {
+  height: 100vh;
+  background-color: #000;
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  overflow: hidden;
+}
+.body h2 {
+  color: #fff;
+  padding-top: 35vh;
+  font-size: 40px;
+  font-weight: 400;
+}
+.body img {
+  animation-name: wave;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  width: 35px;
+}
+@keyframes wave {
+  0% {
+    transform: rotate(315deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(315deg);
+  }
+}
+.name {
+  font-size: 40px;
+  color: #fff;
+  font-weight: 400;
+}
+.name span {
+  color: #ef233c;
+}
+.container {
+  line-height: 90px;
+  height: 90px;
+  overflow: hidden;
+  text-align: center;
+}
+.container li {
+  font-size: 60px;
+  font-weight: 400;
+  animation: slide 8s steps(2) infinite;
+  position: relative;
+  margin: auto;
+}
+.container li:first-of-type {
+  top: 0;
+  width: 580px;
+}
+.container li:last-of-type {
+  top: 0;
+  width: 445px;
+}
+@keyframes slide {
+  100% {
+    top: -180px;
+  }
+}
+.container li span {
+  color: #fff;
+  line-height: 65.6px;
+  width: 0;
+  position: absolute;
+  overflow: hidden;
+  white-space: nowrap;
+  left: 0;
+  animation-name: typing, cursor;
+  animation-iteration-count: infinite, infinite;
+  animation-fill-mode: backwards, backwards;
+  animation-duration: 4s, 0.6s;
+  border-right: 2px solid #fff;
+  animation-timing-function: steps(28), steps(28);
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes cursor {
+  0% {
+    border-right-color: transparent;
+  }
+  50% {
+    border-right-color: #fff;
+  }
+  100% {
+    border-right-color: transparent;
+  }
+}
+@media (max-width: 650px) {
+  .name {
+    font-size: 35px;
+  }
+  .container li {
+    font-size: 35px;
+  }
+  .container li:first-of-type {
+    width: 338.3px;
+  }
+  .container li:last-of-type {
+    width: 259.58px;
+  }
+  .container li span {
+    animation-duration: 2.33s, 0.6s;
+  }
+  .container li {
+    animation-duration: 4.7s;
+  }
+}
