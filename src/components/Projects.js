@@ -4,37 +4,37 @@ import classes from "./Projects.module.css";
 import book from "../assests/bookstore.png";
 import socialMedia from "../assests/socialMedia.png";
 import flag from "../assests/flag.png";
-import fylo from "../assests/fylo.png";
-import card from "../assests/card.png";
+import jobSleuth from "../assests/jobSleuth.png";
+import myMuse from "../assests/myMuse.png";
 const projects = [
-  {
-    image: fylo,
-    link: "https://mansi-bhatnagar.github.io/fylo-landing-page-with-two-column-layout/",
-    lang: "HTML  CSS",
-    id: 1,
-  },
   {
     image: flag,
     link: "https://mansi-bhatnagar.github.io/Rest-countries-API-with-color-theme-switcher/",
     lang: "HTML  CSS  JS Bootstrap",
+    id: 1,
+  },
+  {
+    image: jobSleuth,
+    link: "https://job-sleuth.netlify.app/",
+    lang: "React.js  MUI",
     id: 2,
+  },
+  {
+    image: myMuse,
+    link: "https://my-muse-08b750.netlify.app",
+    lang: "React.js  Redux",
+    id: 3,
   },
   {
     image: book,
     link: " https://mansi-bhatnagar.github.io/bookstore-management-system/",
     lang: "HTML  CSS JS Bootstrap",
-    id: 3,
+    id: 4,
   },
   {
     image: socialMedia,
     link: "https://fluffy-granita-0dd9eb.netlify.app/",
     lang: "React.js",
-    id: 4,
-  },
-  {
-    image: card,
-    link: "https://mansi-bhatnagar.github.io/interactive-card-details-form-main/",
-    lang: "HTML  CSS JS",
     id: 5,
   },
 ];
