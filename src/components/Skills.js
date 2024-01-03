@@ -8,6 +8,9 @@ import html from "../assests/html5.svg";
 import css from "../assests/css3-alt.svg";
 import react from "../assests/react.svg";
 import redux from "../assests/icons8-redux-48.svg";
+import bootstrap from "../assests/bootstrap-logo.png";
+import mui from "../assests/mui.jpg";
+import typeScript from "../assests/typescript.png";
 const imageData = [
   {
     imageName: c,
@@ -66,6 +69,30 @@ const imageData = [
       "invert(100%) sepia(0%) saturate(7%) hue-rotate(196deg) brightness(104%) contrast(104%)",
     id: 8,
     percent: "65%",
+  },
+  {
+    imageName: bootstrap,
+    skill: "bootstrap",
+    filter:
+      "invert(99%) sepia(10%) saturate(2%) hue-rotate(198deg) brightness(111%) contrast(100%)",
+    id: 9,
+    percent: "70%",
+  },
+  {
+    imageName: mui,
+    skill: "mui",
+    filter:
+      "invert(99%) sepia(10%) saturate(2%) hue-rotate(198deg) brightness(111%) contrast(100%)",
+    id: 10,
+    percent: "70%",
+  },
+  {
+    imageName: typeScript,
+    skill: "typeScript",
+    filter:
+      "invert(99%) sepia(10%) saturate(2%) hue-rotate(198deg) brightness(111%) contrast(100%)",
+    id: 11,
+    percent: "80%",
   },
 ];
 const Skills = () => {
